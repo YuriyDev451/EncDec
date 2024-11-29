@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/secureTxt"
+            android:layout_width="227dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.293"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/mediumKey"
+            android:layout_width="227dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="key"
+            app:layout_constraintEnd_toEndOf="@+id/secureTxt"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/secureTxt"
+            app:layout_constraintTop_toBottomOf="@+id/secureTxt" />
+
+        <Button
+            android:id="@+id/encrypt"
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="28dp"
+            android:text="Encrypt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mediumKey" />
+
+        <TextView
+            android:id="@+id/encryptTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="@+id/encrypt"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toStartOf="@+id/encrypt"
+            app:layout_constraintTop_toBottomOf="@+id/encrypt" />
+
+        <EditText
+            android:id="@+id/medKey"
+            android:layout_width="225dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="48dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="key"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.301"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/encryptTxt" />
+
+        <Button
+            android:id="@+id/decrypt"
+            android:layout_width="130dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="40dp"
+            android:text="Decrypt"
+            app:layout_constraintEnd_toEndOf="@+id/encrypt"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/encrypt"
+            app:layout_constraintTop_toBottomOf="@+id/medKey" />
+
+        <TextView
+            android:id="@+id/finalTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/decrypt"
+            app:layout_constraintStart_toStartOf="@+id/decrypt"
+            app:layout_constraintTop_toBottomOf="@+id/decrypt" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
